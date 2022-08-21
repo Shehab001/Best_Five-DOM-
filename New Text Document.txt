@@ -1,0 +1,18 @@
+title
+title show
+min 6 card
+
+
+bonus
+disable button
+alert when 5 player is selected
+6 commit
+minimum a function
+meaningful var and function
+validation
+
+
+private repo link
+deploy link
+
+

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.font {
+  font-family: Berkshire Swash;
+  font-size: 5vw;
+}
+.container p {
+  font-size: 1.2vw;
+  font-family: Berkshire Swash;
+}
+
+.img img {
+  width: 100%;
+}
+.bottom {
+  bottom: -30px;
+}
+.border {
+  border: 2px solid white;
+}
