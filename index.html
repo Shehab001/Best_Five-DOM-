@@ -357,32 +357,33 @@
             <img class="mx-auto" src="images/u.png" alt="underline" />
             <div class="py-5">
                 <label class="size" for="perPlayer">Per Player : </label>
-                <input class="bg-black sm:h-4 md:h-10	widthh" type="text"></input>
+                <input id="cost" class="bg-black sm:h-4 md:h-10	widthh" type="text" placeholder="$"></input>
 
                 <a
-                  href="#"
-                  class="mx-auto my-5 w-11/12	 inline-flex items-center py-2 px-2 sz font-medium text-center text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
+                  id="calc"
+                  class="mx-auto cursor-pointer my-5 w-11/12	 inline-flex items-center py-2 px-2 sz font-medium text-center text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                onclick="totalCost(this.id)"
+                  >
                   <span class="mx-auto">Calculate</span>
                 </a>
 
-                <p class="size mt-5 mb-10">Player Expenses : $ <span>5000</span></p>
+                <p class="size mt-5 mb-10">Player Expenses : $ <span id="expense">000</span></p>
           
 
                  <label class="size" for="Manager">Manager : </label>
-                <input class="ml-2 sm:h-4 md:h-10 mb-5 bg-black widthh" type="text"></input>
+                <input id='manager' class="ml-2 sm:h-4 md:h-10 mb-5 bg-black widthh" type="text" placeholder="$"></input>
                  <label class="size " for="Coach">Coach : </label>
                  
-                <input class="ml-2 sm:h-4 md:h-10 bg-black widthh mb-10" type="text"></input>
+                <input id='coach' class="ml-2 sm:h-4 md:h-10 bg-black widthh mb-10" type="text" placeholder="$"></input>
 
                 <a
-                  href="#"
-                  class=" sz right my-5 w-11/12	 inline-flex items-center py-2 px-2 font-medium text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
+                  class=" sz cursor-pointer right my-5 w-11/12	 inline-flex items-center py-2 px-2 font-medium text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                onclick="totalCalculation()"
+                  >
                   <span class="mx-auto">Calculate Total</span>
                 </a>
 
-                <p class="size">Total : $ <span>5000</span></p>
+                <p class="size">Total : $ <span id="total">000</span></p>
             </div>
           </div>
         </div>
