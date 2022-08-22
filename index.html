@@ -16,6 +16,15 @@
     <script>
       tailwind.config = {
         theme: {
+          screens: {
+            lgg: "1061px",
+            sm: "400px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "826px",
+            // => @media (min-width: 762px) { ... }
+
+          },
           extend: {
             colors: {
               clifford: "#da373d",
@@ -31,8 +40,8 @@
       <div class="containerr text-center relative pb-16">
         <h1 class="pt-10 font text-cyan-500">Choose Your Best Five</h1>
 
-        <div class="z-10 mx-52">
-          <p class="text-blue-200 pt-16 relative">
+        <div class="z-10 md:mx-52 mx-16">
+          <p class="text-blue-200 pt-16 relative z-10">
             A transfer window is the period during the year in which a football
             club can transfer players from other playing staff into their
             playing staff. Such a transfer is completed by registering the
@@ -41,7 +50,7 @@
             "registration period" as described in the FIFA Regulations on the
             Status and Transfer of Players.
             <img
-              class="absolute bottom right-32 w-2/12"
+              class="absolute bottom right-48 w-2/12 z-0"
               src="images/l.png"
               alt="line"
             />
@@ -54,9 +63,9 @@
     </section>
 
     <!-- ------------------------------Card section -->
-    <section class="bg-gray-800 px-20 py-10">
+    <section class="bg-gray-800 sm:px-5 md:px-20 py-10">
       <div class="card grid grid-cols-5 gap-4 bg-black rounded">
-        <div class="left col-span-4 grid grid-cols-3 p-5 gap-8">
+        <div class="left col-span-4 grid md:grid-cols-3 sm:grid-cols-2 p-5 gap-8">
           <div class="card1">
             <div
               class="max-w-sm rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
@@ -73,15 +82,15 @@
                   <h5
                     class="mb-2 name font-bold tracking-tight text-gray-900 dark:text-white"
                   >
-                    Venâncio Casimiro
+                     <span class="sm:block lgg:!inline">Venâncio  </span> Casimiro
                   </h5>
                 </a>
-                <p class="sz mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  <span class="mr-5">16 Goals</span> <span> 10 Assits</span>
+                <p class="sz mx-auto mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <span class="md:mr-3 md:inline sm:block">•16 Goals</span> <span>•10 Assits</span>
                 </p>
                 <a
                   href="#"
-                  class=" size inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class=" size inline-flex items-center py-2 px-3 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Select
                   <svg
@@ -112,17 +121,17 @@
               <div class="p-5 text-center">
                 <a href="#">
                   <h5
-                    class="name mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="name mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
                   >
-                    Toni Kroos
+                   <span class="sm:block lgg:!inline">Toni</span> Kroos
                   </h5>
                 </a>
-                <p class="sz mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  <span class="mr-5">26 Goals</span> <span> 15 Assits</span>
+                <p class="sz mx-auto mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <span class="md:mr-3 md:inline sm:block">•26 Goals</span> <span>•15 Assits</span>
                 </p>
                 <a
                   href="#"
-                  class="size inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="size inline-flex items-center py-2 px-3  font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Select
                   <svg
@@ -157,17 +166,17 @@
               <div class="p-5 text-center">
                 <a href="#">
                   <h5
-                    class="name mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="name mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
                   >
-                    Luka Modrić
+                    <span class="sm:block lgg:!inline">Luka</span> Modrić
                   </h5>
                 </a>
-                <p class="sz mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  <span class="mr-5">29 Goals</span> <span> 19 Assits</span>
+                <p class="sz mx-auto mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <span class="md:mr-3 md:inline sm:block">•29 Goals</span> <span>•19 Assits</span>
                 </p>
                 <a
                   href="#"
-                  class="size inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="size inline-flex items-center py-2 px-3 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Select
                   <svg
@@ -203,17 +212,17 @@
               <div class="p-5 text-center">
                 <a href="#">
                   <h5
-                    class="name mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="name mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
                   >
-                    Antonio Rüdiger
+                    <span class="sm:block lgg:!inline">Antonio</span> Rüdiger
                   </h5>
                 </a>
-                <p class="sz mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  <span class="mr-5">6 Goals</span> <span> 10 Assits</span>
+                <p class="sz mx-auto mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <span class="md:mr-3 md:inline sm:block">•6 Goals</span> <span> •10 Assits</span>
                 </p>
                 <a
                   href="#"
-                  class="size inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="size inline-flex items-center py-2 px-3 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Select
                   <svg
@@ -249,17 +258,17 @@
               <div class="p-5 text-center">
                 <a href="#">
                   <h5
-                    class="name mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="name mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
                   >
-                    Djani Tchouaméni
+                    <span class="sm:block lgg:!inline">Djani </span>Tchouaméni
                   </h5>
                 </a>
-                <p class="sz mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  <span class="mr-5">12 Goals</span> <span> 14 Assits</span>
+                <p class="sz mx-auto mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <span class="md:mr-3 md:inline sm:block">•12 Goals</span> <span> •14 Assits</span>
                 </p>
                 <a
                   href="#"
-                  class="size inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="size inline-flex items-center py-2 px-3 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Select
                   <svg
@@ -295,17 +304,17 @@
               <div class="p-5 text-center">
                 <a href="#">
                   <h5
-                    class="name mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="name mb-2 font-bold tracking-tight text-gray-900 dark:text-white"
                   >
-                    Santiago Valverde
+                    <span class="sm:block lgg:!inline">Santiago</span> Valverde
                   </h5>
                 </a>
-                <p class="sz mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  <span class="mr-5">10 Goals</span> <span> 10 Assits</span>
+                <p class="sz mx-auto mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <span class="md:mr-3 md:inline sm:block">•10 Goals</span> <span> •10 Assits</span>
                 </p>
                 <a
                   href="#"
-                  class="size inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="size inline-flex items-center py-2 px-3 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Select
                   <svg
@@ -327,11 +336,11 @@
           </div>
         </div>
         <!-- ------------------------right side -->
-        <div class="right my-5 mr-5 text-slate-300 grid-rows-2">
+        <div class="right my-5 mr-5  text-slate-300 grid-rows-2">
           <div class="top text-center mb-10">
             <h1 class="font">Chosen V</h1>
-            <img  class="ml-5" src="images/u.png" alt="underline" />
-            <div class="list mx-5 py-5">
+            <img  class="mx-auto" src="images/u.png" alt="underline" />
+            <div class="list mx-5 py-5 sz">
               <ol class="list-decimal">
                 <li>CR-7</li>
               </br>
@@ -347,30 +356,31 @@
           </div>
           <div class="bottom text-slate-300 text-center">
                <h1 class="font ">Budget</h1>
-            <img class="ml-5" src="images/u.png" alt="underline" />
+            <img class="mx-auto" src="images/u.png" alt="underline" />
             <div class="py-5">
                 <label class="size" for="perPlayer">Per Player</label>
-                <input class="ml-2 bg-black widthh" type="text"></input>
+                <input class="bg-black widthh" type="text"></input>
 
                 <a
                   href="#"
-                  class=" right my-5 inline-flex items-center py-2 px-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="mx-auto my-5 inline-flex items-center py-2 px-2 sz font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Calculate
                 </a>
 
                 <p class="size">Player Expenses</p>
-                 <p class="size pb-5">$5000</p>
+                 <p class="size pb-5">$ 5000</p>
 
                  <label class="size" for="Manager">Manager</label>
                 <input class="ml-2 mb-5 bg-black widthh" type="text"></input>
-
+<br>
                  <label class="size " for="Coach">Coach</label>
+                 <br>
                 <input class="ml-2 bg-black widthh" type="text"></input>
 
                 <a
                   href="#"
-                  class=" size right my-5 inline-flex items-center py-2 px-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class=" size right my-5 inline-flex items-center py-2 px-2 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Calculate Total
                 </a>
