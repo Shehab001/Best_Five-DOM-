@@ -37,3 +37,14 @@ body {
 .border-top {
   border-top: 1px solid white;
 }
+
+.disabled {
+  background-color: rgb(50, 50, 50) !important;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.stylee {
+  font-size: 1.5vw;
+  line-height: 10vh;
+}
